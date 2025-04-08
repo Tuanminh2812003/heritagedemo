@@ -4,6 +4,7 @@ import { FaYoutube } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { useState } from "react";
+import FooterText from "../../../Components/FooterText";
 
 function Footer(){
     const [showSource, setShowSource] = useState(false);
@@ -14,69 +15,7 @@ function Footer(){
     return(
         <>
             <div className="Footer">
-                <div className="container">
-                    <div className="Footer__inner">
-                        <div className="Footer__inner__row">
-                            <div className="Footer__inner__title">
-                                Dự án HERITAGE FLASH XR
-                            </div>
-                            <img src="/Logo.png" alt="logo"/>
-                        </div>
-                        <div className="Footer__inner__row">
-                        <div className="Footer__inner__title">
-                                Hướng dẫn chuyên môn
-                            </div>
-                            <div className="Footer__inner__disc">
-                                PGS.TS Nguyễn Mạnh Hưởng
-                            </div>
-                        
-                            <div className="Footer__inner__title">
-                                Tham vấn chuyên môn
-                            </div>
-                            <div className="Footer__inner__disc">
-                            GS.TS. NGND Đỗ Thanh Bình
-                            </div>
-                            <div className="Footer__inner__disc">
-                            TS. Nguyễn Văn Ninh
-                            </div>
-                            <div className="Footer__inner__disc">
-                            PGS.TS Phan Ngọc Huyền
-                            </div>
-                        </div>
-                        <div className="Footer__inner__row r2">
-                            <div className="Footer__inner__title">
-                                Đơn vị bảo trợ và tài trợ
-                            </div>
-                            <div className="Footer__inner__disc">
-                                Hội Di sản Văn hoá Việt Nam
-                            </div>
-                            <Link to="https://www.youtube.com/watch?v=mZ_Y6QkbSy4&feature=youtu.be">
-                                <div className="Footer__inner__disc">
-                                    Quỹ Hỗ trợ bảo tồn di sản văn hoá Việt Nam
-                                </div>
-                            </Link>
-                            <div className="Footer__inner__disc">
-                                Công ty Cổ phần Công nghệ Giáo dục AES
-                            </div>
-                        </div>
-                        <div className="Footer__inner__row r3">
-                            <div className="Footer__inner__title">
-                                Liên hệ
-                            </div>
-                            <div className="Footer__inner__icon">
-                                <Link to="">
-                                    <FaFacebook />
-                                </Link>
-                                <Link to="">
-                                    <FaInstagram />
-                                </Link>
-                                <Link to="https://www.youtube.com/watch?v=mZ_Y6QkbSy4&feature=youtu.be">
-                                    <FaYoutube />
-                                </Link>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <FooterText/>
                 <div className="Footer__copy">
                     <div className="container">
                         <div className="Footer__copy__inner">
@@ -86,22 +25,43 @@ function Footer(){
                             {showSource && (
                                 <>
                                     <div className="Footer__copy__inner__text">
-                                1. Thành Nhà Hồ và giá trị du lịch của di sản văn hóa thế giới (Trang thông tin điện tử xã Cẩm Yên - huyện Cẩm Thủy)
+                                    1. Cục Di sản Văn hóa
                             </div>
                             <div className="Footer__copy__inner__text">
-                                2. Phát huy giá trị di sản Thành nhà Hồ gắn với phát triển du lịch (Báo Tin Tức)
+                            2. Cổng thông tin điện tử của Bộ Văn hóa Thể thao và Du lịch
                             </div>
                             <div className="Footer__copy__inner__text">
-                                3. Phát huy giá trị di sản Thành nhà Hồ gắn với phát triển du lịch (Báo Tin Tức)
+                            3. Cổng thông tin đối ngoại Vietnam.vn
                             </div>
                             <div className="Footer__copy__inner__text">
-                                4. Thành nhà Hồ - Di tích lịch sử, địa điểm du lịch nổi tiếng bậc nhất xứ Thanh (Vinpearl)
+                            4. Trung tâm Bảo tồn Di sản Thành Nhà Hồ
                             </div>
                             <div className="Footer__copy__inner__text">
-                                5. Khám phá Thành Nhà Hồ – di tích lịch sử nổi tiếng xứ Thanh (ReviewVilla)
+                            5. Viện Hàn lâm Khoa học Xã hội Việt Nam - Viện Khảo Cổ Học
                             </div>
                             <div className="Footer__copy__inner__text">
-                                6. Không chỉ là một bức tường đá, Thành nhà Hồ còn là giá trị của thời gian! (Du lịch tử tế)
+                            6. Viện Khảo Cổ Học, Tạp chí khảo cổ học số 2/2012
+                            </div>
+                            <div className="Footer__copy__inner__text">
+                            7. Trang thông tin điện tử xã Cẩm Yên – huyện Cẩm Thủy, Thành Nhà Hồ và giá trị du lịch của di sản văn hóa thế giới.  
+                            </div>
+                            <div className="Footer__copy__inner__text">
+                            8. Báo Tin Tức, Phát huy giá trị di sản Thành nhà Hồ gắn với phát triển du lịch
+                            </div>
+                            <div className="Footer__copy__inner__text">
+                            9. Báo Tin Tức, Phát huy giá trị di sản Thành nhà Hồ gắn với phát triển du lịch 
+                            </div>
+                            <div className="Footer__copy__inner__text">
+                            10. Báo Thanh Hóa, Bảo tồn, phát huy để nâng cao giá trị Di sản Thành Nhà Hồ
+                            </div>
+                            <div className="Footer__copy__inner__text">
+                            11. Du lịch tử tế, Không chỉ là một bức tường đá, Thành nhà Hồ còn là giá trị của thời gian! 
+                            </div>
+                            <div className="Footer__copy__inner__text">
+                            12. Vinpearl, Thành nhà Hồ - Di tích lịch sử, địa điểm du lịch nổi tiếng bậc nhất xứ Thanh 
+                            </div>
+                            <div className="Footer__copy__inner__text">
+                            13. ReviewVilla, Khám phá Thành Nhà Hồ – di tích lịch sử nổi tiếng xứ Thanh
                             </div>
                                 </>
                             )}

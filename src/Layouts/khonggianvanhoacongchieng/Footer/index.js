@@ -4,6 +4,7 @@ import { FaYoutube } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { useState } from "react";
+import FooterText from "../../../Components/FooterText";
 
 function Footer(){
     const [showSource, setShowSource] = useState(false);
@@ -14,69 +15,7 @@ function Footer(){
     return(
         <>
             <div className="Footer">
-                <div className="container">
-                    <div className="Footer__inner">
-                        <div className="Footer__inner__row">
-                            <div className="Footer__inner__title">
-                                Dự án HERITAGE FLASH XR
-                            </div>
-                            <img src="/Logo.png" alt="logo"/>
-                        </div>
-                        <div className="Footer__inner__row">
-                        <div className="Footer__inner__title">
-                                Hướng dẫn chuyên môn
-                            </div>
-                            <div className="Footer__inner__disc">
-                                PGS.TS Nguyễn Mạnh Hưởng
-                            </div>
-                        
-                            <div className="Footer__inner__title">
-                                Tham vấn chuyên môn
-                            </div>
-                            <div className="Footer__inner__disc">
-                            GS.TS. NGND Đỗ Thanh Bình
-                            </div>
-                            <div className="Footer__inner__disc">
-                            TS. Nguyễn Văn Ninh
-                            </div>
-                            <div className="Footer__inner__disc">
-                            PGS.TS Phan Ngọc Huyền
-                            </div>
-                        </div>
-                        <div className="Footer__inner__row r2">
-                            <div className="Footer__inner__title">
-                                Đơn vị bảo trợ và tài trợ
-                            </div>
-                            <div className="Footer__inner__disc">
-                                Hội Di sản Văn hoá Việt Nam
-                            </div>
-                            <Link to="https://www.youtube.com/watch?v=mZ_Y6QkbSy4&feature=youtu.be">
-                                <div className="Footer__inner__disc">
-                                    Quỹ Hỗ trợ bảo tồn di sản văn hoá Việt Nam
-                                </div>
-                            </Link>
-                            <div className="Footer__inner__disc">
-                                Công ty Cổ phần Công nghệ Giáo dục AES
-                            </div>
-                        </div>
-                        <div className="Footer__inner__row r3">
-                            <div className="Footer__inner__title">
-                                Liên hệ
-                            </div>
-                            <div className="Footer__inner__icon">
-                                <Link to="">
-                                    <FaFacebook />
-                                </Link>
-                                <Link to="">
-                                    <FaInstagram />
-                                </Link>
-                                <Link to="https://www.youtube.com/watch?v=mZ_Y6QkbSy4&feature=youtu.be">
-                                    <FaYoutube />
-                                </Link>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <FooterText/>
                 <div className="Footer__copy">
                     <div className="container">
                         <div className="Footer__copy__inner">
@@ -92,7 +31,31 @@ function Footer(){
                                 2. Cục Du lịch Quốc gia Việt Nam
                             </div>
                             <div className="Footer__copy__inner__text">
-                                3. Nhân vật - sự kiện, Chuyên trang tư liệu của Thông tấn xã Việt Nam
+                            3. Cổng thông tin điện tử của Bộ Văn hóa Thể thao và Du lịch
+                            </div>
+                            <div className="Footer__copy__inner__text">
+                            4. Liên hiệp các Hội UNESCO Việt Nam
+                            </div>
+                            <div className="Footer__copy__inner__text">
+                            5. Viện Văn hóa Nghệ thuật Quốc gia Việt Nam (2017), Di sản văn hóa cồng chiêng Tây Nguyên, NXB Văn hóa Dân tộc
+                            </div>
+                            <div className="Footer__copy__inner__text">
+                            6. Viện Văn hóa – Thông tin (2006), Kiệt tác truyền khẩu và di sản phi vật thể của nhân loại – Không gian văn hóa cồng chiêng Tây Nguyên, NXB Thế Giới
+                            </div>
+                            <div className="Footer__copy__inner__text">
+                            7. Bùi Trọng Hiền, Âm nhạc cồng chiêng Tây Nguyên, NXB Văn hóa Dân tộc
+                            </div>
+                            <div className="Footer__copy__inner__text">
+                            8. Đào Huy Quyền (2010), Văn hóa cồng chiêng các dân tộc Tây Nguyên, NXB Văn hóa Thông tin
+                            </div>
+                            <div className="Footer__copy__inner__text">
+                            9. Tô Ngọc Thanh, nhiều tác giả (2007), Bảo vệ không gian văn hóa cồng chiêng Tây Nguyên – Kiệt tác di sản truyền khẩu và phi vật thể nhân loại, NXB Văn hóa Thông tin
+                            </div>
+                            <div className="Footer__copy__inner__text">
+                            10. Nhân vật - sự kiện, Chuyên trang tư liệu của Thông tấn xã Việt Nam
+                            </div>
+                            <div className="Footer__copy__inner__text">
+                            11. EU-Vietnam Business Netwwork
                             </div>
                                 </>
                             )}

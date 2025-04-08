@@ -4,6 +4,7 @@ import { FaYoutube } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { useState } from "react";
+import FooterText from "../../../Components/FooterText";
 
 function Footer(){
     const [showSource, setShowSource] = useState(false);
@@ -14,69 +15,7 @@ function Footer(){
     return(
         <>
             <div className="Footer">
-                <div className="container">
-                    <div className="Footer__inner">
-                        <div className="Footer__inner__row">
-                            <div className="Footer__inner__title">
-                                Dự án HERITAGE FLASH XR
-                            </div>
-                            <img src="/Logo.png" alt="logo"/>
-                        </div>
-                        <div className="Footer__inner__row">
-                        <div className="Footer__inner__title">
-                                Hướng dẫn chuyên môn
-                            </div>
-                            <div className="Footer__inner__disc">
-                                PGS.TS Nguyễn Mạnh Hưởng
-                            </div>
-                        
-                            <div className="Footer__inner__title">
-                                Tham vấn chuyên môn
-                            </div>
-                            <div className="Footer__inner__disc">
-                            GS.TS. NGND Đỗ Thanh Bình
-                            </div>
-                            <div className="Footer__inner__disc">
-                            TS. Nguyễn Văn Ninh
-                            </div>
-                            <div className="Footer__inner__disc">
-                            PGS.TS Phan Ngọc Huyền
-                            </div>
-                        </div>
-                        <div className="Footer__inner__row r2">
-                            <div className="Footer__inner__title">
-                                Đơn vị bảo trợ và tài trợ
-                            </div>
-                            <div className="Footer__inner__disc">
-                                Hội Di sản Văn hoá Việt Nam
-                            </div>
-                            <Link to="https://www.youtube.com/watch?v=mZ_Y6QkbSy4&feature=youtu.be">
-                                <div className="Footer__inner__disc">
-                                    Quỹ Hỗ trợ bảo tồn di sản văn hoá Việt Nam
-                                </div>
-                            </Link>
-                            <div className="Footer__inner__disc">
-                                Công ty Cổ phần Công nghệ Giáo dục AES
-                            </div>
-                        </div>
-                        <div className="Footer__inner__row r3">
-                            <div className="Footer__inner__title">
-                                Liên hệ
-                            </div>
-                            <div className="Footer__inner__icon">
-                                <Link to="">
-                                    <FaFacebook />
-                                </Link>
-                                <Link to="">
-                                    <FaInstagram />
-                                </Link>
-                                <Link to="https://www.youtube.com/watch?v=mZ_Y6QkbSy4&feature=youtu.be">
-                                    <FaYoutube />
-                                </Link>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <FooterText/>
                 <div className="Footer__copy">
                     <div className="container">
                         <div className="Footer__copy__inner">
@@ -86,19 +25,79 @@ function Footer(){
                             {showSource && (
                                 <>
                                     <div className="Footer__copy__inner__text">
-                                1.  Bài trích của Ngô Đức Thịnh “Tục thờ Mẫu Liễu Hạnh - một sinh hoạt tín ngưỡng - văn hóa cộng đồng”
+                                    1. Cục Di sản Văn hóa
                             </div>
                             <div className="Footer__copy__inner__text">
-                                2. Bảo tồn nét đẹp văn hóa thực hành tín ngưỡng thờ Mẫu – Báo điện tử Đảng Cộng Sản Việt Nam 
+                            2. Cổng thông tin điện tử của Bộ Văn hóa Thể thao và Du lịch
                             </div>
                             <div className="Footer__copy__inner__text">
-                                3. Nghi Lễ Chầu Văn của Người Việt – Cục di sản Văn hóa 
+                            3. Bộ Thông tin và Truyền thông (mic.gov.vn)
                             </div>
                             <div className="Footer__copy__inner__text">
-                                4. TS. Nguyễn Hữu Thụ. Trường Đại học Khoa học Xã hội và nhân văn,Tín ngưỡng thờ mẫu - phương thức lưu giữ và truyền tải truyền thống uống nước nhớ nguồn của người Việt
+                            4. Ban Quản lý Khu Di tích lịch sử Đền Hùng
                             </div>
                             <div className="Footer__copy__inner__text">
-                                5. Tín ngưỡng thờ Mẫu: Nét văn hóa cần lưu giữ Báo điện tử Đảng Cộng Sản Việt Nam 
+                            5. Sở Văn hóa, Thể thao và Du lịch Phú Thọ (svhttdl.phutho.gov.vn)
+                            </div>
+                            <div className="Footer__copy__inner__text">
+                            6. Thông tấn xã Việt Nam (vnanet.vn)
+                            </div>
+                            <div className="Footer__copy__inner__text">
+                            7. Quân đội Nhân dân (qdnd.vn)
+                            </div>
+                            <div className="Footer__copy__inner__text">
+                            8. Tổng cục Du lịch (vietnamtourism.gov.vn)
+                            </div>
+                            <div className="Footer__copy__inner__text">
+                            9. Phạm Bá Khiêm (2013), Đền Hùng và Tín ngưỡng thờ cúng Hùng Vương, NXB Văn hóa Thông tin
+                            </div>
+                            <div className="Footer__copy__inner__text">
+                            10. Tạ Ngọc Tấn, Vũ Trọng Lâm (Đồng chủ biên), Tín ngưỡng thờ cúng Hùng Vương ở Việt Nam, NXB Chính trị Quốc gia Sự thật
+                            </div>
+                            <div className="Footer__copy__inner__text">
+                            11. Tạ Ngọc Tấn, Tín ngưỡng thờ cúng Hùng Vương ở Việt Nam, NXB Lý luận Chính trị
+                            </div>
+                            <div className="Footer__copy__inner__text">
+                            12. Văn Tân, Nguyễn Linh Lê Văn Lan, Nguyễn Đổng Chim Hoàng Hưng, Thời đại Hùng Vương (lịch sử, kinh tế, chính trị, văn hóa, xã hội), NXB Chính trị Quốc gia Sự thật 
+                            </div>
+                            <div className="Footer__copy__inner__text">
+                            13. Báo Nhân dân (nhandan.vn)
+                            </div>
+                            <div className="Footer__copy__inner__text">
+                            14. Báo Chính phủ (baochinhphu.vn)
+                            </div>
+                            <div className="Footer__copy__inner__text">
+                            15. Báo Tài nguyên Môi trường (baotainguyenmoitruong.vn)
+                            </div>
+                            <div className="Footer__copy__inner__text">
+                            16. Báo Văn hóa (baovanhoa.vn)
+                            </div>
+                            <div className="Footer__copy__inner__text">
+                            17. Báo Yên Bái (baoyenbai.com.vn)
+                            </div>
+                            <div className="Footer__copy__inner__text">
+                            18. Báo Phú Thọ (baophutho.vn)
+                            </div>
+                            <div className="Footer__copy__inner__text">
+                            19. VietnamPlus (vietnamplus.vn)
+                            </div>
+                            <div className="Footer__copy__inner__text">
+                            20. VOV (vov.vn)
+                            </div>
+                            <div className="Footer__copy__inner__text">
+                            21. Thông tin Đối ngoại (ttdn.vn)
+                            </div>
+                            <div className="Footer__copy__inner__text">
+                            22. Hà Nội mới (hanoimoi.vn)
+                            </div>
+                            <div className="Footer__copy__inner__text">
+                            23. Hội Chữ thập đỏ Phú Thọ (chuthapdophutho.org.vn)
+                            </div>
+                            <div className="Footer__copy__inner__text">
+                            24. Xây dựng Đảng (xaydungdang.org.vn)
+                            </div>
+                            <div className="Footer__copy__inner__text">
+                            25. Bộ Lao động - Thương binh và Xã hội (molisa.gov.vn)
                             </div>
                                 </>
                             )}

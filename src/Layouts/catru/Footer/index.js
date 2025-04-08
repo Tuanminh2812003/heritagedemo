@@ -4,6 +4,7 @@ import { FaYoutube } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { useState } from "react";
+import FooterText from "../../../Components/FooterText";
 
 function Footer(){
     const [showSource, setShowSource] = useState(false);
@@ -14,69 +15,7 @@ function Footer(){
     return(
         <>
             <div className="Footer">
-                <div className="container">
-                    <div className="Footer__inner">
-                        <div className="Footer__inner__row">
-                            <div className="Footer__inner__title">
-                                Dự án HERITAGE FLASH XR
-                            </div>
-                            <img src="/Logo.png" alt="logo"/>
-                        </div>
-                        <div className="Footer__inner__row">
-                        <div className="Footer__inner__title">
-                                Hướng dẫn chuyên môn
-                            </div>
-                            <div className="Footer__inner__disc">
-                                PGS.TS Nguyễn Mạnh Hưởng
-                            </div>
-                        
-                            <div className="Footer__inner__title">
-                                Tham vấn chuyên môn
-                            </div>
-                            <div className="Footer__inner__disc">
-                            GS.TS. NGND Đỗ Thanh Bình
-                            </div>
-                            <div className="Footer__inner__disc">
-                            TS. Nguyễn Văn Ninh
-                            </div>
-                            <div className="Footer__inner__disc">
-                            PGS.TS Phan Ngọc Huyền
-                            </div>
-                        </div>
-                        <div className="Footer__inner__row r2">
-                            <div className="Footer__inner__title">
-                                Đơn vị bảo trợ và tài trợ
-                            </div>
-                            <div className="Footer__inner__disc">
-                                Hội Di sản Văn hoá Việt Nam
-                            </div>
-                            <Link to="https://www.youtube.com/watch?v=mZ_Y6QkbSy4&feature=youtu.be">
-                                <div className="Footer__inner__disc">
-                                    Quỹ Hỗ trợ bảo tồn di sản văn hoá Việt Nam
-                                </div>
-                            </Link>
-                            <div className="Footer__inner__disc">
-                                Công ty Cổ phần Công nghệ Giáo dục AES
-                            </div>
-                        </div>
-                        <div className="Footer__inner__row r3">
-                            <div className="Footer__inner__title">
-                                Liên hệ
-                            </div>
-                            <div className="Footer__inner__icon">
-                                <Link to="">
-                                    <FaFacebook />
-                                </Link>
-                                <Link to="">
-                                    <FaInstagram />
-                                </Link>
-                                <Link to="https://www.youtube.com/watch?v=mZ_Y6QkbSy4&feature=youtu.be">
-                                    <FaYoutube />
-                                </Link>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <FooterText/>
                 <div className="Footer__copy">
                     <div className="container">
                         <div className="Footer__copy__inner">
@@ -86,13 +25,40 @@ function Footer(){
                             {showSource && (
                                 <>
                                     <div className="Footer__copy__inner__text">
-                                1. Trung tâm lưu trữ Quốc gia IV
+                                    1. Bộ Thông tin và Truyền thông (mic.gov.vn)
                             </div>
                             <div className="Footer__copy__inner__text">
-                                2. Báo Nhân dân
+                            2. Cục Di sản Văn hóa
                             </div>
                             <div className="Footer__copy__inner__text">
-                                3. Cục Di sản văn hóa
+                            3. Cục Du lịch Quốc gia Việt Nam
+                            </div>
+                            <div className="Footer__copy__inner__text">
+                            4. Cổng thông tin điện tử của Bộ Văn hóa Thể thao và Du lịch
+                            </div>
+                            <div className="Footer__copy__inner__text">
+                            5. Trung tâm Lưu trữ Quốc gia IV 
+                            </div>
+                            <div className="Footer__copy__inner__text">
+                            6. Trần Thị Kim Anh, Đinh Văn Minh, Ca Trù Thăng Long – Hà Nội, NXB Văn Học
+                            </div>
+                            <div className="Footer__copy__inner__text">
+                            7. Nguyễn Xuân Diện, Ca Trù phía sau đàn phách, NXB Phụ Nữ
+                            </div>
+                            <div className="Footer__copy__inner__text">
+                            8. Nguyễn Xuân Diện (2007), Lịch sử và Nghệ thuật Ca Trù (Khảo sát nguồn tư liệu tại Viện nghiên cứu Hán Nôm), NXB Thế Giới. 
+                            </div>
+                            <div className="Footer__copy__inner__text">
+                            9. Đỗ Bằng Đoàn, Đỗ Trọng Huề (1962), Việt Nam Ca Trù biên khảo
+                            </div>
+                            <div className="Footer__copy__inner__text">
+                            10. Thảo Vy, Công Đạt, Tất Sơn (2022), Ca Trù – di sản “thính phòng” của người Việt, Báo ảnh Việt Nam
+                            </div>
+                            <div className="Footer__copy__inner__text">
+                            11. Báo Nhân Dân
+                            </div>
+                            <div className="Footer__copy__inner__text">
+                            12. Báo Lao động 
                             </div>
                                 </>
                             )}
