@@ -1,0 +1,415 @@
+//RedMode-
+$RedMode-Back-color: #FFFFFF;
+$RedMode-Text-color: #374151;
+$RedMode-Title-color: #991B1B;
+$RedMode-Disc-color: #EEE;
+$RedMode-Back2-color: #FEF2F2;
+$RedMode-Question-background: #FEF2F2;
+$RedMode-Question-color: #F66E5B;
+
+//GreenMode-
+$GreenMode-Back-color: #D4E0BD;
+$GreenMode-Text-color: #374151;
+$GreenMode-Title-color: #1D5136;
+$GreenMode-Disc-color: #374151;
+$GreenMode-Back2-color: #1D5136;
+$GreenMode-Question-background: #FEF2F2;
+$GreenMode-Question-color: #D7EC84;
+
+//BlueMode
+$BlueMode-Back-color: #F3E7DB;
+$BlueMode-Text-color: #374151;
+$BlueMode-Title-color: #374151;
+$BlueMode-Disc-color: #374151;
+$BlueMode-Back2-color: #6F8083;
+$BlueMode-Question-color: #57A6B4;
+$BlueMode-Question-background: #FEF2F2;
+
+//BrownMode
+$brownMode-Back-color: #E3DAD2;
+$brownMode-Text-color: #374151;
+$brownMode-Title-color: #4C3932;
+$brownMode-Disc-color: #374151;
+$brownMode-Back2-color: #4C3932;
+$brownMode-Question-background: #FEF2F2;
+$brownMode-Question-color: #C16746;
+
+.redMode{
+    .Section7{
+        padding: 60px 460px;
+        width: 100%;
+    
+        .container{
+            padding: 0px;
+        }
+    
+        &__inner{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.10), 0px 20px 25px 0px rgba(0, 0, 0, 0.10);
+            background-color: white;
+            width: 100%;
+    
+            &__title{
+                color: $RedMode-Title-color;
+                text-align: center;
+                font-size: 36px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 150%; /* 30px */
+                margin-bottom: 16px;
+            }
+            &__disc{
+                text-align: center;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 130%; /* 18.2px */
+            }
+    
+            form{
+                margin-top: 16px;
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+    
+                label{
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 130%; /* 15.6px */
+                    margin-top: 24px;
+                }
+                input{
+                    margin-top: 10px;
+                    border-radius: 8px;
+                    padding: 8px 32px;
+                    border: 1px $RedMode-Title-color solid;
+                }
+                .Section7__inner__form{
+                    padding: 0px;
+                    border-radius: 0px;
+                    border: 0px;
+                }
+                textarea{
+                    height: 70px;
+                    padding: 10px;
+                    border-radius: 8px;
+                    margin-top: 8px;
+                    margin-bottom: 26px;
+                }
+                button{
+                    background-color: $RedMode-Title-color;
+                    color: white;
+                    border-radius: 8px;
+                    padding: 8px 32px;
+                    justify-content: center;
+                    align-items: center;
+                    display: flex;
+                    border: 1px $RedMode-Title-color solid;
+                    margin-top: 24px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 150%; /* 21px */
+                    cursor: pointer;
+                }
+                button:hover{
+                    background-color: white;
+                    color: $RedMode-Title-color;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1500.98px){
+    .Section7{
+        padding: 60px 360px !important;
+    }
+}
+@media (max-width: 1200.98px){
+    .Section7{
+        padding: 60px 120px !important;
+    }
+}
+@media (max-width: 1027.98px){
+    .Section7{
+        padding: 60px !important;
+    }
+}
+.greenMode{
+    .Section7{
+        padding: 60px 460px;
+        width: 100%;
+    
+        .container{
+            padding: 0px;
+        }
+    
+        &__inner{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.10), 0px 20px 25px 0px rgba(0, 0, 0, 0.10);
+            background-color: white;
+            width: 100%;
+    
+            &__title{
+                color: $GreenMode-Title-color;
+                text-align: center;
+                font-size: 36px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 150%; /* 30px */
+                margin-bottom: 16px;
+            }
+            &__disc{
+                text-align: center;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 130%; /* 18.2px */
+            }
+    
+            form{
+                margin-top: 16px;
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+    
+                label{
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 130%; /* 15.6px */
+                    margin-top: 24px;
+                }
+                input{
+                    margin-top: 10px;
+                    border-radius: 8px;
+                    padding: 8px 32px;
+                    border: 1px $GreenMode-Title-color solid;
+                }
+                .Section7__inner__form{
+                    padding: 0px;
+                    border-radius: 0px;
+                    border: 0px;
+                }
+                textarea{
+                    height: 70px;
+                    padding: 10px;
+                    border-radius: 8px;
+                    margin-top: 8px;
+                    margin-bottom: 26px;
+                }
+                button{
+                    background-color: $GreenMode-Title-color;
+                    color: white;
+                    border-radius: 8px;
+                    padding: 8px 32px;
+                    justify-content: center;
+                    align-items: center;
+                    display: flex;
+                    border: 1px $GreenMode-Title-color solid;
+                    margin-top: 24px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 150%; /* 21px */
+                    cursor: pointer;
+                }
+                button:hover{
+                    background-color: white;
+                    color: $GreenMode-Title-color;
+                }
+            }
+        }
+    }
+}
+.blueMode{
+    .Section7{
+        padding: 60px 460px;
+        width: 100%;
+    
+        .container{
+            padding: 0px;
+        }
+    
+        &__inner{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.10), 0px 20px 25px 0px rgba(0, 0, 0, 0.10);
+            background-color: white;
+            width: 100%;
+    
+            &__title{
+                color: $BlueMode-Title-color;
+                text-align: center;
+                font-size: 36px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 150%; /* 30px */
+                margin-bottom: 16px;
+            }
+            &__disc{
+                text-align: center;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 130%; /* 18.2px */
+            }
+    
+            form{
+                margin-top: 16px;
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+    
+                label{
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 130%; /* 15.6px */
+                    margin-top: 24px;
+                }
+                input{
+                    margin-top: 10px;
+                    border-radius: 8px;
+                    padding: 8px 32px;
+                    border: 1px $BlueMode-Title-color solid;
+                }
+                .Section7__inner__form{
+                    padding: 0px;
+                    border-radius: 0px;
+                    border: 0px;
+                }
+                textarea{
+                    height: 70px;
+                    padding: 10px;
+                    border-radius: 8px;
+                    margin-top: 8px;
+                    margin-bottom: 26px;
+                }
+                button{
+                    background-color: $BlueMode-Title-color;
+                    color: white;
+                    border-radius: 8px;
+                    padding: 8px 32px;
+                    justify-content: center;
+                    align-items: center;
+                    display: flex;
+                    border: 1px $BlueMode-Title-color solid;
+                    margin-top: 24px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 150%; /* 21px */
+                    cursor: pointer;
+                }
+                button:hover{
+                    background-color: white;
+                    color: $BlueMode-Title-color;
+                }
+            }
+        }
+    }
+}
+.brownMode{
+    .Section7{
+        padding: 60px 460px;
+        width: 100%;
+    
+        .container{
+            padding: 0px;
+        }
+    
+        &__inner{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.10), 0px 20px 25px 0px rgba(0, 0, 0, 0.10);
+            background-color: white;
+            width: 100%;
+    
+            &__title{
+                color: $brownMode-Title-color;
+                text-align: center;
+                font-size: 36px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 150%; /* 30px */
+                margin-bottom: 16px;
+            }
+            &__disc{
+                text-align: center;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 130%; /* 18.2px */
+            }
+    
+            form{
+                margin-top: 16px;
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+    
+                label{
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 130%; /* 15.6px */
+                    margin-top: 24px;
+                }
+                input{
+                    margin-top: 10px;
+                    border-radius: 8px;
+                    padding: 8px 32px;
+                    border: 1px $brownMode-Title-color solid;
+                }
+                .Section7__inner__form{
+                    padding: 0px;
+                    border-radius: 0px;
+                    border: 0px;
+                }
+                textarea{
+                    height: 70px;
+                    padding: 10px;
+                    border-radius: 8px;
+                    margin-top: 8px;
+                    margin-bottom: 26px;
+                }
+                button{
+                    background-color: $brownMode-Title-color;
+                    color: white;
+                    border-radius: 8px;
+                    padding: 8px 32px;
+                    justify-content: center;
+                    align-items: center;
+                    display: flex;
+                    border: 1px $brownMode-Title-color solid;
+                    margin-top: 24px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 150%; /* 21px */
+                    cursor: pointer;
+                }
+                button:hover{
+                    background-color: white;
+                    color: $brownMode-Title-color;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 661.98px){
+    .Section7__inner__title{
+        font-size: 20px !important;
+    }
+    .Section7{
+        padding: 32px !important;
+    }
+}

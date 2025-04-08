@@ -1,0 +1,765 @@
+//RedMode-
+$RedMode-Back-color: #FFFFFF;
+$RedMode-Text-color: #374151;
+$RedMode-Title-color: #991B1B;
+$RedMode-Disc-color: #EEE;
+$RedMode-Back2-color: #FEF2F2;
+$RedMode-Question-background: #FEF2F2;
+$RedMode-Question-color: #F66E5B;
+
+//GreenMode-
+$GreenMode-Back-color: #D4E0BD;
+$GreenMode-Text-color: #374151;
+$GreenMode-Title-color: #1D5136;
+$GreenMode-Disc-color: #374151;
+$GreenMode-Back2-color: #1D5136;
+$GreenMode-Question-background: #FEF2F2;
+$GreenMode-Question-color: #D7EC84;
+
+//BlueMode
+$BlueMode-Back-color: #F3E7DB;
+$BlueMode-Text-color: #374151;
+$BlueMode-Title-color: #374151;
+$BlueMode-Disc-color: #374151;
+$BlueMode-Back2-color: #6F8083;
+$BlueMode-Question-color: #57A6B4;
+$BlueMode-Question-background: #FEF2F2;
+
+//BrownMode
+$brownMode-Back-color: #E3DAD2;
+$brownMode-Text-color: #374151;
+$brownMode-Title-color: #4C3932;
+$brownMode-Disc-color: #374151;
+$brownMode-Back2-color: #4C3932;
+$brownMode-Question-background: #FEF2F2;
+$brownMode-Question-color: #C16746;
+
+.redMode{
+    .Section2 {
+        display: flex;
+        width: 100%;
+        background-color: $RedMode-Question-background;
+        padding: 60px 0px;
+    
+        &__inner {
+            width: 100%;
+            display: flex;
+            position: relative;
+            flex-direction: column;
+    
+            &__title {
+            color: $RedMode-Title-color;
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 150%; /* 30px */
+            text-align: center;
+            margin-bottom: 16px;
+            }
+    
+            &__disc {
+            font-style: normal;
+            font-weight: 400;
+            line-height: 130%; /* 18.2px */
+            text-align: center;
+            }
+    
+            &__game {
+            width: 100%;
+            display: flex;
+            position: relative;
+            height: 704px;
+            margin-top: 40px;
+            align-items: center;
+            justify-content: space-around;
+            flex-wrap: wrap;
+    
+            &__image {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                border-radius: 40px;
+                filter: blur(10px); /* Làm mờ ban đầu */
+                transition: 0.3s ease-in-out filter;
+            }
+    
+            &__image.clear {
+                filter: none; /* Hiển thị rõ hình ảnh khi trả lời đúng hết */
+            }
+    
+            &__ans {
+                width: 48%;
+                height: 47%;
+                background-color: $RedMode-Question-color;
+                position: relative;
+                z-index: 2;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 50px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 150%; /* 75px */
+                color: white;
+                border-radius: 16px;
+                transition: 0.2s ease-in all;
+                cursor: pointer;
+                visibility: visible; /* Hiển thị ô mặc định */
+            }
+    
+            &__ans.hidden {
+                visibility: hidden; /* Ẩn ô khi trả lời đúng */
+                transition: visibility 0.2s ease-in-out;
+            }
+    
+            &__ans:hover {
+                background-color: #e3e15a;
+                transition: 0.2s ease-in all;
+            }
+            }
+        }
+    }
+    
+    /* Popup câu hỏi */
+    .popup {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        z-index: 1000;
+        width: 50%;
+    
+        &__content {
+            h3{
+                text-align: start;
+            }
+        }
+    
+        button {
+            padding: 16px 12px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: 0.3s ease background;
+            text-align: start;
+            width: 100%;
+            background-color: white;
+            border: solid #E5E7EB 1px;
+            border-radius: 8px;
+            margin: 8px 0px;
+        }
+    }
+    
+    /* Popup chúc mừng */
+    .congrats-popup {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: #fef9c3;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        z-index: 1000;
+        text-align: center;
+    
+        &__title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ff9800;
+            margin-bottom: 16px;
+        }
+    
+        &__message {
+            font-size: 16px;
+            color: #374151;
+            margin-bottom: 24px;
+        }
+    
+        button {
+            padding: 10px 20px;
+            background: #ff9800;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background 0.3s;
+    
+            &:hover {
+                background: #e68900;
+            }
+        }
+    }
+        
+    .Section2__inner__game__ans.hidden {
+        visibility: hidden;
+    }
+    
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); /* Màu nền đen mờ */
+        z-index: 999; /* Đặt dưới popup nhưng trên các phần tử khác */
+    }
+}
+
+@media (max-width: 868.98px){
+    .Section2__inner__game{
+        height: 300px !important;
+    }
+    .popup{
+        width: 80% !important;
+    }
+}
+
+.greenMode{
+    .Section2 {
+        display: flex;
+        width: 100%;
+        background-color: $GreenMode-Question-background;
+        padding: 60px 0px;
+    
+        &__inner {
+            width: 100%;
+            display: flex;
+            position: relative;
+            flex-direction: column;
+    
+            &__title {
+            color: $GreenMode-Title-color;
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 150%; /* 30px */
+            text-align: center;
+            margin-bottom: 16px;
+            }
+    
+            &__disc {
+
+            font-style: normal;
+            font-weight: 400;
+            line-height: 130%; /* 18.2px */
+            text-align: center;
+            }
+    
+            &__game {
+            width: 100%;
+            display: flex;
+            position: relative;
+            height: 704px;
+            margin-top: 40px;
+            align-items: center;
+            justify-content: space-around;
+            flex-wrap: wrap;
+    
+            &__image {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                border-radius: 40px;
+                filter: blur(10px); /* Làm mờ ban đầu */
+                transition: 0.3s ease-in-out filter;
+            }
+    
+            &__image.clear {
+                filter: none; /* Hiển thị rõ hình ảnh khi trả lời đúng hết */
+            }
+    
+            &__ans {
+                width: 48%;
+                height: 47%;
+                background-color: $GreenMode-Question-color;
+                position: relative;
+                z-index: 2;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 50px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 150%; /* 75px */
+                color: $GreenMode-Text-color;
+                border-radius: 16px;
+                transition: 0.2s ease-in all;
+                cursor: pointer;
+                visibility: visible; /* Hiển thị ô mặc định */
+            }
+    
+            &__ans.hidden {
+                visibility: hidden; /* Ẩn ô khi trả lời đúng */
+                transition: visibility 0.2s ease-in-out;
+            }
+    
+            &__ans:hover {
+                background-color: #e3e15a;
+                transition: 0.2s ease-in all;
+            }
+            }
+        }
+    }
+    
+    /* Popup câu hỏi */
+    .popup {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        z-index: 1000;
+        width: 50%;
+    
+        &__content {
+            h3{
+                text-align: start;
+            }
+        }
+    
+        button {
+            padding: 16px 12px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: 0.3s ease background;
+            text-align: start;
+            width: 100%;
+            background-color: white;
+            border: solid #E5E7EB 1px;
+            border-radius: 8px;
+            margin: 8px 0px;
+        }
+    }
+    
+    /* Popup chúc mừng */
+    .congrats-popup {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: #fef9c3;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        z-index: 1000;
+        text-align: center;
+    
+        &__title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ff9800;
+            margin-bottom: 16px;
+        }
+    
+        &__message {
+            font-size: 16px;
+            color: #374151;
+            margin-bottom: 24px;
+        }
+    
+        button {
+            padding: 10px 20px;
+            background: #ff9800;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background 0.3s;
+    
+            &:hover {
+                background: #e68900;
+            }
+        }
+    }
+        
+    .Section2__inner__game__ans.hidden {
+        visibility: hidden;
+    }
+    
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); /* Màu nền đen mờ */
+        z-index: 999; /* Đặt dưới popup nhưng trên các phần tử khác */
+    }
+}
+
+.blueMode{
+    .Section2 {
+        display: flex;
+        width: 100%;
+        background-color: $BlueMode-Question-background;
+        padding: 60px 0px;
+    
+        &__inner {
+            width: 100%;
+            display: flex;
+            position: relative;
+            flex-direction: column;
+    
+            &__title {
+            color: $BlueMode-Title-color;
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 150%; /* 30px */
+            text-align: center;
+            margin-bottom: 16px;
+            }
+    
+            &__disc {
+            font-style: normal;
+            font-weight: 400;
+            line-height: 130%; /* 18.2px */
+            text-align: center;
+            }
+    
+            &__game {
+            width: 100%;
+            display: flex;
+            position: relative;
+            height: 704px;
+            margin-top: 40px;
+            align-items: center;
+            justify-content: space-around;
+            flex-wrap: wrap;
+    
+            &__image {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                border-radius: 40px;
+                filter: blur(10px); /* Làm mờ ban đầu */
+                transition: 0.3s ease-in-out filter;
+            }
+    
+            &__image.clear {
+                filter: none; /* Hiển thị rõ hình ảnh khi trả lời đúng hết */
+            }
+    
+            &__ans {
+                width: 48%;
+                height: 47%;
+                background-color: $BlueMode-Question-color;
+                position: relative;
+                z-index: 2;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 50px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 150%; /* 75px */
+                color: white;
+                border-radius: 16px;
+                transition: 0.2s ease-in all;
+                cursor: pointer;
+                visibility: visible; /* Hiển thị ô mặc định */
+            }
+    
+            &__ans.hidden {
+                visibility: hidden; /* Ẩn ô khi trả lời đúng */
+                transition: visibility 0.2s ease-in-out;
+            }
+    
+            &__ans:hover {
+                background-color: #e3e15a;
+                transition: 0.2s ease-in all;
+            }
+            }
+        }
+    }
+    
+    /* Popup câu hỏi */
+    .popup {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        z-index: 1000;
+        width: 50%;
+    
+        &__content {
+            h3{
+                text-align: start;
+            }
+        }
+    
+        button {
+            padding: 16px 12px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: 0.3s ease background;
+            text-align: start;
+            width: 100%;
+            background-color: white;
+            border: solid #E5E7EB 1px;
+            border-radius: 8px;
+            margin: 8px 0px;
+        }
+    }
+    
+    /* Popup chúc mừng */
+    .congrats-popup {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: #fef9c3;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        z-index: 1000;
+        text-align: center;
+    
+        &__title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ff9800;
+            margin-bottom: 16px;
+        }
+    
+        &__message {
+            font-size: 16px;
+            color: #374151;
+            margin-bottom: 24px;
+        }
+    
+        button {
+            padding: 10px 20px;
+            background: #ff9800;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background 0.3s;
+    
+            &:hover {
+                background: #e68900;
+            }
+        }
+    }
+        
+    .Section2__inner__game__ans.hidden {
+        visibility: hidden;
+    }
+    
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); /* Màu nền đen mờ */
+        z-index: 999; /* Đặt dưới popup nhưng trên các phần tử khác */
+    }
+}
+
+.brownMode{
+    .Section2 {
+        display: flex;
+        width: 100%;
+        background-color: $brownMode-Question-background;
+        padding: 60px 0px;
+    
+        &__inner {
+            width: 100%;
+            display: flex;
+            position: relative;
+            flex-direction: column;
+    
+            &__title {
+            color: $brownMode-Title-color;
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 150%; /* 30px */
+            text-align: center;
+            margin-bottom: 16px;
+            }
+    
+            &__disc {
+            font-style: normal;
+            font-weight: 400;
+            line-height: 130%; /* 18.2px */
+            text-align: center;
+            }
+    
+            &__game {
+            width: 100%;
+            display: flex;
+            position: relative;
+            height: 704px;
+            margin-top: 40px;
+            align-items: center;
+            justify-content: space-around;
+            flex-wrap: wrap;
+    
+            &__image {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                border-radius: 40px;
+                filter: blur(10px); /* Làm mờ ban đầu */
+                transition: 0.3s ease-in-out filter;
+            }
+    
+            &__image.clear {
+                filter: none; /* Hiển thị rõ hình ảnh khi trả lời đúng hết */
+            }
+    
+            &__ans {
+                width: 48%;
+                height: 47%;
+                background-color: $brownMode-Question-color;
+                position: relative;
+                z-index: 2;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 50px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 150%; /* 75px */
+                color: white;
+                border-radius: 16px;
+                transition: 0.2s ease-in all;
+                cursor: pointer;
+                visibility: visible; /* Hiển thị ô mặc định */
+            }
+    
+            &__ans.hidden {
+                visibility: hidden; /* Ẩn ô khi trả lời đúng */
+                transition: visibility 0.2s ease-in-out;
+            }
+    
+            &__ans:hover {
+                background-color: #e3e15a;
+                transition: 0.2s ease-in all;
+            }
+            }
+        }
+    }
+    
+    /* Popup câu hỏi */
+    .popup {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        z-index: 1000;
+        width: 50%;
+    
+        &__content {
+            h3{
+                text-align: start;
+            }
+        }
+    
+        button {
+            padding: 16px 12px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: 0.3s ease background;
+            text-align: start;
+            width: 100%;
+            background-color: white;
+            border: solid #E5E7EB 1px;
+            border-radius: 8px;
+            margin: 8px 0px;
+        }
+    }
+    
+    /* Popup chúc mừng */
+    .congrats-popup {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: #fef9c3;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        z-index: 1000;
+        text-align: center;
+    
+        &__title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ff9800;
+            margin-bottom: 16px;
+        }
+    
+        &__message {
+            font-size: 16px;
+            color: #374151;
+            margin-bottom: 24px;
+        }
+    
+        button {
+            padding: 10px 20px;
+            background: #ff9800;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background 0.3s;
+    
+            &:hover {
+                background: #e68900;
+            }
+        }
+    }
+        
+    .Section2__inner__game__ans.hidden {
+        visibility: hidden;
+    }
+    
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); /* Màu nền đen mờ */
+        z-index: 999; /* Đặt dưới popup nhưng trên các phần tử khác */
+    }
+}
+@media (max-width: 661.98px){
+    .Section2__inner__title{
+        font-size: 20px !important;
+    }
+    .Section2{
+        padding: 32px 0px !important;
+    }
+}

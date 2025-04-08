@@ -1,0 +1,103 @@
+.home{
+    width: 100%;
+    background-image: url(../../../public/Home/back.png);
+    background-size: cover;
+    background-attachment: fixed;
+
+    &__section1{
+        display: flex;
+        width: 100%;
+
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    &__section2{
+        display: flex;
+        margin-top: 80px;
+        width: 100%;
+
+        &__inner{
+            display: flex;
+            background-color: #F3E7DB;
+            border-radius: 16px;
+            align-items: center;
+            justify-content: space-between;
+            padding: 44px 67px;
+            box-shadow: 6px 8px 20px #888888;
+            flex-wrap: wrap;
+
+            img{
+                width: 30%;
+                height: auto;
+            }
+
+            &__box{
+                display: flex;
+                flex-direction: column;
+                background-color: white;
+                border-radius: 16px;
+                padding: 12px 48px;
+                width: 68%;
+
+                &__text{
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 150%;
+                    margin: 12px 0px;
+                }
+
+                b{
+                    color: #89231E;
+                    font-size: 20px;
+                }
+                ul{
+                    padding-left: 24px;
+                    margin: 12px 0px;
+                }
+            }
+        }
+    }
+    &__section3{
+        display: flex;
+        width: 100%;
+        margin-bottom: 160px;
+
+        &__inner{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin-top: 80px;
+            border-radius: 24px;
+            box-shadow: 0px 0px 10px 5px #b6b6b6;
+            padding: 62px 56px;
+            background-color: white;
+        }
+    }
+}
+@media(max-width: 1194.98px){
+    .home{
+        &__section2{
+            &__inner{
+
+                padding: 24px 16px;
+
+                img{
+                    width: 100%;
+                }
+                &__box{
+                    width: 100%;
+                    margin-top: 8px;
+                    padding: 24px;
+                }
+            }
+        }
+        &__section3{
+            &__inner{
+                padding: 40px 32px;
+            }
+        }
+    }
+}

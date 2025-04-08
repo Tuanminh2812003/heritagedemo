@@ -1,0 +1,330 @@
+//RedMode-
+$RedMode-Back-color: #FFFFFF;
+$RedMode-Text-color: #374151;
+$RedMode-Title-color: #991B1B;
+$RedMode-Disc-color: #EEE;
+$RedMode-Back2-color: #FEF2F2;
+$RedMode-Question-background: #FEF2F2;
+$RedMode-Question-color: #F66E5B;
+
+//GreenMode-
+$GreenMode-Back-color: #D4E0BD;
+$GreenMode-Text-color: #374151;
+$GreenMode-Title-color: #1D5136;
+$GreenMode-Disc-color: #374151;
+$GreenMode-Back2-color: #1D5136;
+$GreenMode-Question-background: #FEF2F2;
+$GreenMode-Question-color: #D7EC84;
+
+//BlueMode
+$BlueMode-Back-color: #F3E7DB;
+$BlueMode-Text-color: #374151;
+$BlueMode-Title-color: #374151;
+$BlueMode-Disc-color: #374151;
+$BlueMode-Back2-color: #6F8083;
+$BlueMode-Question-color: #57A6B4;
+$BlueMode-Question-background: #FEF2F2;
+
+//BrownMode
+$brownMode-Back-color: #E3DAD2;
+$brownMode-Text-color: #374151;
+$brownMode-Title-color: #4C3932;
+$brownMode-Disc-color: #374151;
+$brownMode-Back2-color: #4C3932;
+$brownMode-Question-background: #FEF2F2;
+$brownMode-Question-color: #C16746;
+
+.redMode{
+    .Audio{
+        display: flex;
+        height: 100px;
+        width: 100%;
+        border-radius: 16px;
+        padding: 16px;
+        margin-top: 40px;
+        position: relative;
+        overflow: hidden;
+
+        &:hover > .Audio__back{
+            background-color: $RedMode-Question-color;
+            opacity: 0.9;
+        }
+
+        &__back{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: $RedMode-Title-color;
+        }
+    
+        &__inner{
+            display: flex;
+            height: 100%;
+            width: 100%;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+
+    
+            &__image{
+                height: 100%;
+                width: 25%;
+                border-radius: 12px;
+                background-position: center;
+                background-size: cover;
+            }
+            &__text{
+                color: white;
+                width: 60%;
+                white-space: nowrap; /* Không cho phép xuống dòng */
+                overflow: hidden; /* Ẩn nội dung thừa nếu quá dài */
+                text-overflow: ellipsis; /* Thêm dấu "..." nếu nội dung bị cắt */
+
+                &__title{
+                    font-weight: 700;
+                    font-size: 20px;
+                }
+                &__disc{
+                    font-weight: 400;
+                }
+            }
+            &__play{
+                padding: 10px;
+                border-radius: 100px;
+                background-color: white;
+                font-size: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.greenMode{
+    .Audio{
+        display: flex;
+        height: 100px;
+        width: 100%;
+        border-radius: 16px;
+        padding: 16px;
+        margin-top: 40px;
+        position: relative;
+        overflow: hidden;
+
+        &:hover > .Audio__back{
+            background-color: #D7EC84;
+            opacity: 0.5;
+        }
+
+        &__back{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #D7EC84;
+        }
+    
+        &__inner{
+            display: flex;
+            height: 100%;
+            width: 100%;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+
+    
+            &__image{
+                height: 100%;
+                width: 25%;
+                border-radius: 12px;
+                background-position: center;
+                background-size: cover;
+            }
+            &__text{
+                color: $GreenMode-Title-color;
+                width: 60%;
+                white-space: nowrap; /* Không cho phép xuống dòng */
+                overflow: hidden; /* Ẩn nội dung thừa nếu quá dài */
+                text-overflow: ellipsis; /* Thêm dấu "..." nếu nội dung bị cắt */
+
+                &__title{
+                    font-weight: 700;
+                    font-size: 20px;
+                }
+                &__disc{
+                    font-weight: 400;
+                }
+            }
+            &__play{
+                padding: 10px;
+                border-radius: 100px;
+                background-color: white;
+                font-size: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.blueMode{
+    .Audio{
+        display: flex;
+        height: 100px;
+        width: 100%;
+        border-radius: 16px;
+        padding: 16px;
+        margin-top: 40px;
+        position: relative;
+        overflow: hidden;
+
+        &:hover > .Audio__back{
+            background-color: $BlueMode-Question-color;
+            opacity: 0.9;
+        }
+
+        &__back{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: $BlueMode-Title-color;
+        }
+    
+        &__inner{
+            display: flex;
+            height: 100%;
+            width: 100%;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+
+    
+            &__image{
+                height: 100%;
+                width: 25%;
+                border-radius: 12px;
+                background-position: center;
+                background-size: cover;
+            }
+            &__text{
+                color: white;
+                width: 60%;
+                white-space: nowrap; /* Không cho phép xuống dòng */
+                overflow: hidden; /* Ẩn nội dung thừa nếu quá dài */
+                text-overflow: ellipsis; /* Thêm dấu "..." nếu nội dung bị cắt */
+
+                &__title{
+                    font-weight: 700;
+                    font-size: 20px;
+                }
+                &__disc{
+                    font-weight: 400;
+                }
+            }
+            &__play{
+                padding: 10px;
+                border-radius: 100px;
+                background-color: white;
+                font-size: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.brownMode{
+    .Audio{
+        display: flex;
+        height: 100px;
+        width: 100%;
+        border-radius: 16px;
+        padding: 16px;
+        margin-top: 40px;
+        position: relative;
+        overflow: hidden;
+
+        &:hover > .Audio__back{
+            background-color: $GreenMode-Back2-color;
+            opacity: 0.5;
+        }
+
+        &__back{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: $GreenMode-Title-color;
+        }
+    
+        &__inner{
+            display: flex;
+            height: 100%;
+            width: 100%;
+            align-items: center;
+            justify-content: space-between;
+    
+            &__image{
+                height: 100%;
+                width: 25%;
+                border-radius: 12px;
+                background-position: center;
+                background-size: cover;
+            }
+            &__text{
+                color: white;
+                width: 60%;
+                overflow: hidden;
+                white-space: nowrap; /* Không cho phép xuống dòng */
+                overflow: hidden; /* Ẩn nội dung thừa nếu quá dài */
+                text-overflow: ellipsis; /* Thêm dấu "..." nếu nội dung bị cắt */
+
+                &__title{
+                    font-weight: 700;
+                    font-size: 20px;
+                }
+                &__disc{
+                    font-weight: 400;
+                }
+            }
+            &__play{
+                padding: 10px;
+                border-radius: 100px;
+                background-color: white;
+                font-size: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+@media (max-width: 668px){
+    .Audio{
+        height: 57px !important;
+        padding: 9px  !important;
+        margin-top: 24px !important;
+
+        &__inner{
+            &__text{
+                &__title{
+                    font-size: 14px !important;
+                }
+            }
+        }
+    }
+}

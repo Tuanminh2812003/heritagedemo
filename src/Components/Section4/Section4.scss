@@ -1,0 +1,488 @@
+//RedMode-
+$RedMode-Back-color: #FFFFFF;
+$RedMode-Text-color: #374151;
+$RedMode-Title-color: #991B1B;
+$RedMode-Disc-color: #EEE;
+$RedMode-Back2-color: #FEF2F2;
+$RedMode-Question-background: #FEF2F2;
+$RedMode-Question-color: #F66E5B;
+
+//GreenMode-
+$GreenMode-Back-color: #D4E0BD;
+$GreenMode-Text-color: #374151;
+$GreenMode-Title-color: #1D5136;
+$GreenMode-Disc-color: #374151;
+$GreenMode-Back2-color: #1D5136;
+$GreenMode-Question-background: #FEF2F2;
+$GreenMode-Question-color: #D7EC84;
+
+//BlueMode
+$BlueMode-Back-color: #F3E7DB;
+$BlueMode-Text-color: #374151;
+$BlueMode-Title-color: #374151;
+$BlueMode-Disc-color: #374151;
+$BlueMode-Back2-color: #6F8083;
+$BlueMode-Question-color: #57A6B4;
+$BlueMode-Question-background: #FEF2F2;
+
+//BrownMode
+$brownMode-Back-color: #E3DAD2;
+$brownMode-Text-color: #374151;
+$brownMode-Title-color: #4C3932;
+$brownMode-Disc-color: #374151;
+$brownMode-Back2-color: #4C3932;
+$brownMode-Question-background: #FEF2F2;
+$brownMode-Question-color: #C16746;
+
+.redMode{
+    .Section4{
+        position: relative;
+        overflow: hidden;
+        padding: 60px 0px;
+        width: 100%;
+    }
+    .Section4__title{
+        color: $RedMode-Title-color;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 150%; /* 30px */
+        text-align: center;
+        margin-bottom: 24px;
+    }
+    
+    .Section4__slider {
+        display: flex;
+        overflow: hidden; /* Ẩn các ảnh nằm ngoài slider */
+        position: relative;
+        margin-bottom: 24px;
+        height: 70vh;
+        width: 100%;
+    
+        &__image {
+            height: 100%;
+            min-width: 100%;
+            flex-shrink: 0;
+            transition: transform 0.5s ease-in-out;
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: black;
+        }
+    }
+    .Section4__pagi {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 24px;
+    
+        &__dot {
+            width: 12px;
+            height: 12px;
+            background-color: #cfd2d7;
+            border-radius: 50%;
+            margin: 0px 8px;
+            transition: background-color 0.3s ease;
+        
+            &.active {
+                background-color: $RedMode-Title-color;
+            }
+        }
+    }
+    
+    .Section4__text__inner {
+        display: block; /* Hiển thị đoạn text hiện tại */
+    }
+    
+    
+    .Section4__next {
+        width: 40px;
+        height: 40px;
+        background-color: $RedMode-Title-color;
+        border-radius: 50%;
+        right: 10px;
+        top: 460px; /* Căn giữa theo chiều cao */
+        transform: translateY(-50%); /* Dịch chuyển để căn giữa */
+        color: white;
+        font-size: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        position: absolute;
+    
+        &:hover {
+            background-color: darken($RedMode-Title-color, 10%);
+        }
+    }
+    .Section4__prev {
+        width: 40px;
+        height: 40px;
+        background-color: $RedMode-Title-color;
+        border-radius: 50%;
+        left: 10px;
+        top: 460px; /* Căn giữa theo chiều cao */
+        transform: translateY(-50%); /* Dịch chuyển để căn giữa */
+        color: white;
+        font-size: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        position: absolute;
+    
+        &:hover {
+            background-color: darken($RedMode-Title-color, 10%);
+        }
+    }
+    
+}
+.greenMode{
+    .Section4{
+        position: relative;
+        overflow: hidden;
+        padding: 60px 0px;
+        width: 100%;
+    }
+    .Section4__title{
+        color: $GreenMode-Title-color;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 150%; /* 30px */
+        text-align: center;
+        margin-bottom: 24px;
+    }
+    
+    .Section4__slider {
+        display: flex;
+        overflow: hidden; /* Ẩn các ảnh nằm ngoài slider */
+        position: relative;
+        margin-bottom: 24px;
+        height: 70vh;
+        width: 100%;
+    
+        &__image {
+            height: 100%;
+            min-width: 100%;
+            flex-shrink: 0;
+            transition: transform 0.5s ease-in-out;
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: black;
+        }
+    }
+    .Section4__pagi {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 24px;
+    
+        &__dot {
+            width: 12px;
+            height: 12px;
+            background-color: #cfd2d7;
+            border-radius: 50%;
+            margin: 0px 8px;
+            transition: background-color 0.3s ease;
+        
+            &.active {
+                background-color: $GreenMode-Title-color;
+            }
+        }
+    }
+    
+    .Section4__text__inner {
+        display: block; /* Hiển thị đoạn text hiện tại */
+    }
+    
+    
+    .Section4__next {
+        width: 40px;
+        height: 40px;
+        background-color: $GreenMode-Title-color;
+        border-radius: 50%;
+        right: 10px;
+        top: 460px; /* Căn giữa theo chiều cao */
+        transform: translateY(-50%); /* Dịch chuyển để căn giữa */
+        color: white;
+        font-size: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        position: absolute;
+    
+        &:hover {
+            background-color: darken($GreenMode-Title-color, 10%);
+        }
+    }
+    .Section4__prev {
+        width: 40px;
+        height: 40px;
+        background-color: $GreenMode-Title-color;
+        border-radius: 50%;
+        left: 10px;
+        top: 460px; /* Căn giữa theo chiều cao */
+        transform: translateY(-50%); /* Dịch chuyển để căn giữa */
+        color: white;
+        font-size: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        position: absolute;
+    
+        &:hover {
+            background-color: darken($GreenMode-Title-color, 10%);
+        }
+    }
+    
+}
+.blueMode{
+    .Section4{
+        position: relative;
+        overflow: hidden;
+        padding: 60px 0px;
+        width: 100%;
+    }
+    .Section4__title{
+        color: $BlueMode-Title-color;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 150%; /* 30px */
+        text-align: center;
+        margin-bottom: 24px;
+    }
+    
+    .Section4__slider {
+        display: flex;
+        overflow: hidden; /* Ẩn các ảnh nằm ngoài slider */
+        position: relative;
+        margin-bottom: 24px;
+        height: 70vh;
+        width: 100%;
+    
+        &__image {
+            height: 100%;
+            min-width: 100%;
+            flex-shrink: 0;
+            transition: transform 0.5s ease-in-out;
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: black;
+        }
+    }
+    .Section4__pagi {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 24px;
+    
+        &__dot {
+            width: 12px;
+            height: 12px;
+            background-color: #cfd2d7;
+            border-radius: 50%;
+            margin: 0px 8px;
+            transition: background-color 0.3s ease;
+        
+            &.active {
+                background-color: $BlueMode-Title-color;
+            }
+        }
+    }
+    
+    .Section4__text__inner {
+        display: block; /* Hiển thị đoạn text hiện tại */
+    }
+    
+    
+    .Section4__next {
+        width: 40px;
+        height: 40px;
+        background-color: $BlueMode-Title-color;
+        border-radius: 50%;
+        right: 10px;
+        top: 460px; /* Căn giữa theo chiều cao */
+        transform: translateY(-50%); /* Dịch chuyển để căn giữa */
+        color: white;
+        font-size: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        position: absolute;
+    
+        &:hover {
+            background-color: darken($BlueMode-Title-color, 10%);
+        }
+    }
+    .Section4__prev {
+        width: 40px;
+        height: 40px;
+        background-color: $BlueMode-Title-color;
+        border-radius: 50%;
+        left: 10px;
+        top: 460px; /* Căn giữa theo chiều cao */
+        transform: translateY(-50%); /* Dịch chuyển để căn giữa */
+        color: white;
+        font-size: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        position: absolute;
+    
+        &:hover {
+            background-color: darken($BlueMode-Title-color, 10%);
+        }
+    }
+    
+}
+.brownMode{
+    .Section4{
+        position: relative;
+        overflow: hidden;
+        padding: 60px 0px;
+        width: 100%;
+    }
+    .Section4__title{
+        color: $brownMode-Title-color;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 150%; /* 30px */
+        text-align: center;
+        margin-bottom: 24px;
+    }
+    
+    .Section4__slider {
+        display: flex;
+        overflow: hidden; /* Ẩn các ảnh nằm ngoài slider */
+        position: relative;
+        margin-bottom: 24px;
+        height: 70vh;
+        width: 100%;
+    
+        &__image {
+            height: 100%;
+            min-width: 100%;
+            flex-shrink: 0;
+            transition: transform 0.5s ease-in-out;
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: black;
+        }
+    }
+    .Section4__pagi {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 24px;
+    
+        &__dot {
+            width: 12px;
+            height: 12px;
+            background-color: #cfd2d7;
+            border-radius: 50%;
+            margin: 0px 8px;
+            transition: background-color 0.3s ease;
+        
+            &.active {
+                background-color: $brownMode-Title-color;
+            }
+        }
+    }
+    
+    .Section4__text__inner {
+        display: block; /* Hiển thị đoạn text hiện tại */
+    }
+    
+    
+    .Section4__next {
+        width: 40px;
+        height: 40px;
+        background-color: $brownMode-Title-color;
+        border-radius: 50%;
+        right: 24px;
+        top: 460px; /* Căn giữa theo chiều cao */
+        transform: translateY(-50%); /* Dịch chuyển để căn giữa */
+        color: white;
+        font-size: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        position: absolute;
+    
+        &:hover {
+            background-color: darken($brownMode-Title-color, 10%);
+        }
+    }
+    .Section4__prev {
+        width: 40px;
+        height: 40px;
+        background-color: $brownMode-Title-color;
+        border-radius: 50%;
+        left: 24px;
+        top: 460px; /* Căn giữa theo chiều cao */
+        transform: translateY(-50%); /* Dịch chuyển để căn giữa */
+        color: white;
+        font-size: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        position: absolute;
+    
+        &:hover {
+            background-color: darken($brownMode-Title-color, 10%);
+        }
+    }
+    
+}
+
+@media (max-width: 1300.98px){
+    .Section4__next{
+        top: 380px !important;
+    }
+    .Section4__prev{
+        top: 380px !important;
+    }
+}
+
+@media (max-width: 661.98px){
+    .Section4__slider{
+        height: 40vh !important;
+    }
+    .Section4{
+        padding: 32px 0px !important;
+    }
+    .Section4__title{
+        font-size: 20px !important;
+    }
+    .Section4__next{
+        top: 230px !important;
+    }
+    .Section4__prev{
+        top: 230px !important;
+    }
+}
+
+@media (max-width: 400.98px){
+    .Section4__next{
+        top: 250px !important;
+    }
+    .Section4__prev{
+        top: 250px !important;
+    }
+}
