@@ -70,7 +70,7 @@ function FooterText(){
                             )}
                             <div className="Footer__inner__disc">
                                 <div className="Footer__inner__disc__text">
-                                    PGS. TS Nguyễn Mạnh Hưởng
+                                    TS. Nguyễn Văn Ninh
                                 </div>
                                 <div className="Footer__inner__disc__icon" onClick={clickInfo1p2}>
                                 {info1p2 ? (
