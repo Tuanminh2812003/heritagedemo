@@ -9,11 +9,15 @@ import { IoMdArrowDropdown } from "react-icons/io";
 function FooterText(){
 
     const [info1, setInfo1] = useState(false);
+    const [info1p2, setInfo1p2] = useState(false);
     const [info2, setInfo2] = useState(false);
     const [info3, setInfo3] = useState(false);
     const [info4, setInfo4] = useState(false);
     const clickInfo1 = () => {
         setInfo1(!info1); // Chuyển đổi trạng thái
+    };
+    const clickInfo1p2 = () => {
+        setInfo1p2(!info1p2); // Chuyển đổi trạng thái
     };
     const clickInfo2 = () => {
         setInfo2(!info2); // Chuyển đổi trạng thái
@@ -64,6 +68,25 @@ function FooterText(){
                                     </li>
                                 </ul>
                             )}
+                            <div className="Footer__inner__disc">
+                                <div className="Footer__inner__disc__text">
+                                    PGS. TS Nguyễn Mạnh Hưởng
+                                </div>
+                                <div className="Footer__inner__disc__icon" onClick={clickInfo1p2}>
+                                {info1p2 ? (
+                                    <IoMdArrowDropdown />
+                                ) : (
+                                    <IoMdArrowDropright />
+                                )}
+                                </div>
+                            </div>
+                            {info1p2 && (
+                                <ul className="Footer__inner__info">
+                                    <li>
+                                        Trưởng khoa Lịch sử, Trường Đại học Sư phạm Hà Nội
+                                    </li>
+                                </ul>
+                            )}
                             
                             <div className="Footer__inner__title">
                                 Tham vấn chuyên môn
@@ -92,7 +115,7 @@ function FooterText(){
                             )}
                             <div className="Footer__inner__disc">
                                 <div className="Footer__inner__disc__text">
-                                TS. Nguyễn Văn Ninh
+                                PGS.TS Phan Ngọc Huyền 
                                 </div>
                                 <div className="Footer__inner__disc__icon" onClick={clickInfo3}>
                                 {info3 ? (
@@ -105,16 +128,16 @@ function FooterText(){
                             {info3 && (
                                 <ul className="Footer__inner__info">
                                     <li>
-                                        Giảng viên chính, Trưởng khoa Lịch sử, Trường ĐHSP Hà Nội
+                                        Giảng viên cao cấp, Phó Trưởng khoa Lịch sử, Trường ĐHSP Hà Nội
                                     </li>
                                     <li>
-                                        Chủ biên và tác giả Sách giáo khoa Lịch sử lớp 6 - 12, bộ sách Cánh Diều
+                                        Tác giả Sách giáo khoa Lịch sử, bộ sách Kết nối tri thức với cuộc sống
                                     </li>
                                 </ul>
                             )}
                             <div className="Footer__inner__disc">
                                 <div className="Footer__inner__disc__text">
-                                PGS.TS Phan Ngọc Huyền
+                                TS. Nguyễn Thị Phương Thanh 
                                 </div>
                                 <div className="Footer__inner__disc__icon" onClick={clickInfo4}>
                                 {info4 ? (
@@ -127,10 +150,10 @@ function FooterText(){
                             {info4 && (
                                 <ul className="Footer__inner__info">
                                     <li>
-                                        Giảng viên cao cấp, Phó Trưởng khoa Lịch sử, Trường ĐHSP Hà Nội
+                                        Giảng viên chính Bộ môn Lí luận và Phương pháp dạy học, khoa Lịch sử, Trường Đại học Sư phạm Hà Nội
                                     </li>
                                     <li>
-                                        Tác giả Sách giáo khoa Lịch sử, bộ sách Kết nối tri thức với cuộc sống
+                                        Tác giả SGK Lịch sử, bộ Cánh Diều
                                     </li>
                                 </ul>
                             )}
