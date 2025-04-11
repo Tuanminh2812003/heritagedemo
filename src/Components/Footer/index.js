@@ -16,7 +16,7 @@ function Footer(){
     return(
         <>
             <div className="Footer">
-                <FooterText/>
+
                 <div className="Footer__copy">
                     <div className="container">
                         <div className="Footer__copy__inner">
@@ -26,6 +26,7 @@ function Footer(){
                         </div>
                     </div>
                 </div>
+                <FooterText/>
             </div>
         </>
     )
