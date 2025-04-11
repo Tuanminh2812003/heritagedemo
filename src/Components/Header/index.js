@@ -67,17 +67,17 @@ function Header() {
                         <div
                             onClick={() => handleScrollToSection("diSanVatThe")}
                         >
-                            Di sản vật thể Thế giới
+                            Di sản văn hóa vật thể
                         </div>
                         <div
                             onClick={() => handleScrollToSection("diSanThienNhien")}
                         >
-                            Di sản thiên nhiên Thế giới
+                            Di sản hỗn hợp và thiên nhiên
                         </div>
                         <div
                             onClick={() => handleScrollToSection("diSanPhiVatThe")}
                         >
-                            Di sản phi vật thể Thế giới
+                            Di sản văn hóa phi vật thể
                         </div>
                         <div
                             onClick={() => handleScrollToSection("diSanTuLieu")}
