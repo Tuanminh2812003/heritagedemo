@@ -64,7 +64,7 @@ function FooterText(){
                                         Chủ biên SGK (lớp 8) và tác giả SGK Lịch sử từ lớp 7 đến lớp 12, Bộ sách Cánh Diều
                                     </li>
                                     <li>
-                                        Báo cáo viên cao cấp của Bộ GD-ĐT về đổi mới GDPT
+                                        Báo cáo viên cốt cán của Bộ GD-ĐT về đổi mới GDPT
                                     </li>
                                 </ul>
                             )}
@@ -84,6 +84,12 @@ function FooterText(){
                                 <ul className="Footer__inner__info">
                                     <li>
                                         Trưởng khoa Lịch sử, Trường Đại học Sư phạm Hà Nội
+                                    </li>
+                                    <li>
+                                        Chủ biên và tác giả Sách giáo khoa Lịch sử từ lớp 6 đến lớp 12
+                                    </li>
+                                    <li>
+                                        Báo cáo viên cốt cán của Bộ GD - ĐT về đổi mới giáo dục phổ thông
                                     </li>
                                 </ul>
                             )}
