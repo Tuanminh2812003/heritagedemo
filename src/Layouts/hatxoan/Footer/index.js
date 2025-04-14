@@ -36,14 +36,19 @@ function Footer(){
             <div className="Footer__copy__inner__text">11. “Hát Xoan chính thức được UNESCO công nhận là Di sản văn hoá thế giới”, Báo điện tử - Đảng Cộng sản Việt Nam</div>
                                 </>
                             )}
-                            
+                        </div>
+                    </div>
+                </div>
+                <FooterText/>
+                <div className="Footer__copy">
+                    <div className="container">
+                        <div className="Footer__copy__inner">
                             <div className="Footer__copy__inner__aes">
                                 © Copyright 2024 AES, All rights reserved
                             </div>
                         </div>
                     </div>
                 </div>
-                <FooterText/>
             </div>
         </>
     )

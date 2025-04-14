@@ -33,13 +33,19 @@ function Footer(){
             <div className="Footer__copy__inner__text">8. Báo Tài nguyên và Môi trường</div>
                                 </>
                             )}
+                        </div>
+                    </div>
+                </div>
+                <FooterText/>
+                <div className="Footer__copy">
+                    <div className="container">
+                        <div className="Footer__copy__inner">
                             <div className="Footer__copy__inner__aes">
                                 © Copyright 2024 AES, All rights reserved
                             </div>
                         </div>
                     </div>
                 </div>
-                <FooterText/>
             </div>
         </>
     )
