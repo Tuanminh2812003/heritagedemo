@@ -25,16 +25,16 @@ function Home(){
                                 </div>
                                 <ul>
                                     <li>
-                                        Di sản thiên nhiên Thế giới 
+                                    Di sản văn hóa vật thể
                                     </li>
                                     <li>
-                                        Di sản vật thể Thế giới
+                                    Di sản hỗn hợp và thiên nhiên
                                     </li>
                                     <li>
-                                        Di sản phi vật thể Thế giới
+                                    Di sản văn hóa phi vật thể
                                     </li>
                                     <li>
-                                        Di sản tư liệu
+                                    Di sản tư liệu
                                     </li>
                                 </ul>
                                 <div className="home__section2__inner__box__text">
@@ -49,19 +49,19 @@ function Home(){
                         <div className="home__section3__inner">
                         <Flashcard
                             sectionData={sections.diSanVatThe}
-                            title="Di sản vật thể Thế giới"
+                            title="Di sản văn hóa vật thể"
                             color="#89231E"
                             id="diSanVatThe"
                         />
                         <Flashcard
                             sectionData={sections.diSanThienNhien}
-                            title="Di sản thiên nhiên Thế giới"
+                            title="Di sản hỗn hợp và thiên nhiên"
                             color="#1D5136"
                             id="diSanThienNhien"
                         />
                         <Flashcard
                             sectionData={sections.diSanPhiVatThe}
-                            title="Di sản phi vật thể Thế giới"
+                            title="Di sản văn hóa phi vật thể"
                             color="#374151"
                             id="diSanPhiVatThe"
                         />
