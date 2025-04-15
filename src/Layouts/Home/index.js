@@ -18,7 +18,10 @@ function Home(){
                             <img src="/Home/section2.png" alt="section2"/>
                             <div className="home__section2__inner__box">
                                 <div className="home__section2__inner__box__text">
-                                    <b>Heritage Flash XR</b>  là bộ thẻ flash di sản tích hợp công nghệ thực tế ảo (AR), mang đến trải nghiệm học tập và khám phá di sản hoàn toàn mới.
+                                    <b>DỰ ÁN BẢO TỒN VÀ PHÁT HUY GIÁ TRỊ DI SẢN VĂN HÓA VIỆT NAM</b>
+                                </div>
+                                <div className="home__section2__inner__box__text">
+                                    <b>“Bộ thẻ HeritageFlash XR tích hợp công nghệ”</b> mang đến trải nghiệm học tập và khám phá di sản hoàn toàn mới.
                                 </div>
                                 <div className="home__section2__inner__box__text">
                                     Bộ thẻ được chia thành 4 nhóm giúp người dùng dễ dàng phân loại và sử dụng:
@@ -28,17 +31,17 @@ function Home(){
                                     Di sản văn hóa vật thể
                                     </li>
                                     <li>
-                                    Di sản hỗn hợp và thiên nhiên
+                                    Di sản văn hóa phi vật thể
                                     </li>
                                     <li>
-                                    Di sản văn hóa phi vật thể
+                                    Di sản hỗn hợp và thiên nhiên
                                     </li>
                                     <li>
                                     Di sản tư liệu
                                     </li>
                                 </ul>
                                 <div className="home__section2__inner__box__text">
-                                    Quét mã QR được in trên mỗi thẻ để truy cập nội dung thực tế ảo, giúp tái hiện sống động các địa danh văn hóa, kiến trúc lịch sử!
+                                Quét mã QR được in trên mỗi thẻ để truy cập nội dung số, giúp tái hiện sống động các địa danh văn hóa, kiến trúc lịch sử!
                                 </div>
                             </div>
                         </div>

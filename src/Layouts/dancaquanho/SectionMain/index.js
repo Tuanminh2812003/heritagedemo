@@ -24,7 +24,7 @@ function SectionMain(){
                 <div className="container">
                     <div className="SectionMain__inner">
                         <div className="SectionMain__inner__title">
-                            QUAN HỌ BẮC NINH
+                            DÂN CA QUAN HỌ
                         </div>
                     </div>
                 </div>
